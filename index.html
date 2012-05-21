@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="js/popcorn.js"></script>
+    <script src="js/popcorn.player.js"></script>
+    <script src="js/popcorn.slider.js"></script>
+    <script src="js/popcorn.youtube.js"></script>
+    <style>
+    body {
+        background-color: #000;
+    }
+
+    #panel {
+        position:relative;
+        width: 1200px;
+        height: 1000px;
+        overflow: hidden;
+    }
+    #panel img {
+        position: absolute;
+        -ms-interpolation-mode:nearest-neighbor;
+        image-rendering: optimizeSpeed;
+    }
+    </style>
+
+    <script>
+    // ensure the web page (DOM) has loaded
+    document.addEventListener("DOMContentLoaded", function () {
+
+           // Create a popcorn instance by calling the Youtube player plugin
+        var p = Popcorn.youtube(
+          '#video',
+          'http://www.youtube.com/watch?v=Z-k72hKtW10' );
+
+        p.slider({
+          start: 0,
+          end: 8,
+          img: 'http://cache.daylife.com/imageserve/06pa6AW0C14Rt/1000x750.jpg',
+          target: "queuediv"
+        }).slider({
+          start: 8,
+          end: 16,
+          img: 'http://cache.daylife.com/imageserve/09uAa4V1BB3Ep/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 16,
+          end: 24,
+          img: 'http://cache.daylife.com/imageserve/0buP6KN6M3bZb/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 24,
+          end: 32,
+          img: 'http://cache.daylife.com/imageserve/08KtfX13BR61A/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 32,
+          end: 40,
+          img: 'http://cache.daylife.com/imageserve/02hr1IAd1Xaia/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 40,
+          end: 48,
+          img: 'http://cache.daylife.com/imageserve/09Sb7zAdWAfBH/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 48,
+          end: 56,
+          img: 'http://cache.daylife.com/imageserve/0gEGf1QdM792j/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 56,
+          end: 64,
+          img: 'http://cache.daylife.com/imageserve/07d0beV05K5rD/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 64,
+          end: 72,
+          img: 'http://cache.daylife.com/imageserve/0eL63SvdWmdhj/1000x750.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 72,
+          end: 80,
+          img: 'http://cache.daylife.com/imageserve/0g7s7Mp2o21gu/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 80,
+          end: 88,
+          img: 'http://cache.daylife.com/imageserve/0f6ZerKdaB4bY/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 88,
+          end: 96,
+          img: 'http://cache.daylife.com/imageserve/0gLX6df9OfgM4/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 96,
+          end: 104,
+          img: 'http://cache.daylife.com/imageserve/0b8M7NL45McyP/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 104,
+          end: 112,
+          img: 'http://cache.daylife.com/imageserve/0c0Z2vX4ov8yw/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 112,
+          end: 120,
+          img: 'http://cache.daylife.com/imageserve/00ZEaGV1Uag3S/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 120,
+          end: 128,
+          img: 'http://cache.daylife.com/imageserve/0aKTf7rcdM0Y6/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 128,
+          end: 136,
+          img: 'http://cache.daylife.com/imageserve/0ezFcGz9kug4s/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 136,
+          end: 144,
+          img: 'http://cache.daylife.com/imageserve/05YQa5o2x977r/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 144,
+          end: 152,
+          img: 'http://cache.daylife.com/imageserve/0dYVg9FbCI1Zd/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 152,
+          end: 160,
+          img: 'http://cache.daylife.com/imageserve/0btH9TBbvG8QR/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 160,
+          end: 168,
+          img: 'http://cache.daylife.com/imageserve/06Ha06Yf0y8xP/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 168,
+          end: 176,
+          img: 'http://cache.daylife.com/imageserve/09FIdZiaiUcRZ/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 176,
+          end: 184,
+          img: 'http://cache.daylife.com/imageserve/0a000kn8A64FA/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 184,
+          end: 192,
+          img: 'http://cache.daylife.com/imageserve/0gDH4FO0lH61n/1000x.jpg',
+          target: "queuediv"                   
+        }).slider({
+          start: 192,
+          end: 200,
+          img: 'http://cache.daylife.com/imageserve/00pmanv7k58zk/1000x.jpg',
+          target: "queuediv"          
+        }).slider({
+          start: 204,
+          end: 212,
+          img: 'black.gif',
+          target: "queuediv"          
+        });
+        
+       
+     
+        
+        
+       
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+
+        // play the video right away
+        p.play();
+
+        var currentImage = null;
+
+        p.on( "timeupdate", function() {
+
+            //console.log( this.currentTime() );
+
+            var active = document.getElementsByClassName('active')[0];
+            if (currentImage != active.src) {
+              insp.init(active.src, currentImage);
+              currentImage = active.src;
+            }
+        });
+
+        function getWidth()
+        {
+          var x = 0;
+          if (self.innerHeight){
+            x = self.innerWidth;
+          }
+          else if (document.documentElement && document.documentElement.clientHeight){
+            x = document.documentElement.clientWidth;
+          }
+          else if (document.body){
+            x = document.body.clientWidth;
+          }
+          return x;
+        }
+
+        function getHeight()
+        {
+          var y = 0;
+          if (self.innerHeight){
+            y = self.innerHeight;
+          }
+          else if (document.documentElement && document.documentElement.clientHeight){
+            y = document.documentElement.clientHeight;
+          }
+          else if (document.body){
+            y = document.body.clientHeight;
+          }
+          return y;
+        }
+
+
+        var insp = {
+            iTimeInterval : 50,
+
+            iZStepA : 0,
+            iZStepB : 0,
+            iImgStep : 1,
+            iFadeSteps : 100,
+            oPan : null,
+            iPanWidth : 0,
+            iPanHeight : 0,
+            iLastWidth : 0,
+            iLastHeight : 0,
+            iLastTop : 0,
+            iLastLeft : 0,
+            oImgBefore: null,
+            oImgAfter: null,
+            intervalId: null,
+
+
+
+            // main initialization function
+            init : function(srcA, srcB) {
+
+                //console.log("switch");
+                //console.log("fadeOut "+srcB);
+                //console.log("fadeIn "+srcA);
+
+                this.iZStepA = 0;
+                this.iZStepB = 0;
+        
+                this.oPan = document.getElementById('panel');
+                //this.iPanWidth = this.oPan.offsetWidth;
+                //this.iPanHeight = this.oPan.offsetHeight;
+
+                this.iPanWidth = getWidth();
+                this.iPanHeight = getHeight();
+
+
+
+
+
+                // initial properties of first img element
+                this.oImgBefore = document.createElement('img'); 
+                this.oImgBefore.src = srcB;
+                
+
+                if (srcB == null) {
+                    this.oImgBefore.style.top = "0px";
+                    this.oImgBefore.style.left = "0px";
+                    this.oImgBefore.style.width = this.iPanWidth + 'px';
+                    this.oImgBefore.style.height = this.iPanWidth + 'px';
+                } else {
+                    this.oImgBefore.style.top = this.iLastTop;
+                    this.oImgBefore.style.left = this.iLastLeft; 
+                    this.oImgBefore.style.width = this.iLastWidth;
+                    this.oImgBefore.style.height = this.iLastHeight;   
+
+                    //console.log(this.iLastTop+","+this.iLastLeft+","+this.iLastWidth+","+this.iLastHeight);                
+                }
+
+                this.oImgBefore.style.filter = 'alpha(opacity=1)';
+                this.oImgBefore.style.opacity = 1;
+                
+                if ( this.oPan.hasChildNodes() ){
+                  while ( this.oPan.childNodes.length >= 1 ) {
+                    this.oPan.removeChild( this.oPan.firstChild );       
+                  } 
+                }
+                this.oPan.appendChild(this.oImgBefore);
+
+                // initial properties of second img element
+                this.oImgAfter = document.createElement('img'); 
+                this.oImgAfter.src = srcA;
+                this.oImgAfter.style.top = '0px';
+                this.oImgAfter.style.left = '0px';
+                this.oImgAfter.style.width = this.iPanWidth + 'px';
+                this.oImgAfter.style.height = this.iPanWidth + 'px';
+                this.oImgAfter.style.filter = 'alpha(opacity=0)';
+                this.oImgAfter.style.opacity = 0;
+
+
+
+                this.oPan.appendChild(this.oImgAfter);
+
+                //console.log(this.iPanWidth);
+
+                clearInterval(this.interValId);
+
+                this.interValId = setInterval(insp.zoom, this.iTimeInterval);
+                
+
+            },
+
+            zoom : function(){
+
+                insp.oImgBefore.style.left = (parseInt(insp.oImgBefore.style.left) - 1) + 'px';
+                insp.oImgBefore.style.width = (parseInt(insp.oImgBefore.style.width) + 2) + 'px';
+                insp.oImgBefore.style.top = (parseInt(insp.oImgBefore.style.top) - 1) + 'px';
+                insp.oImgBefore.style.height = (parseInt(insp.oImgBefore.style.height) + 2) + 'px';
+
+                //console.log(insp.oImgBefore.style.left);
+                //console.log(insp.oImgBefore.style.width);
+                //console.log(insp.oImgBefore.style.top);
+                //console.log(insp.oImgBefore.style.height);
+                //console.log("---");
+
+                console.log(insp.oImgAfter.style.width);
+                insp.oImgAfter.style.left = (parseInt(insp.oImgAfter.style.left) - 1) + 'px';
+                insp.oImgAfter.style.width = (parseInt(insp.oImgAfter.style.width) + 2) + 'px';
+                insp.oImgAfter.style.top = (parseInt(insp.oImgAfter.style.top) - 1) + 'px';
+                insp.oImgAfter.style.height = (parseInt(insp.oImgAfter.style.height) + 2) + 'px';
+
+                //console.log(insp.oImgAfter.style.left);
+                //console.log(insp.oImgAfter.style.width);
+                //console.log(insp.oImgAfter.style.top);
+                //console.log(insp.oImgAfter.style.height);
+                //console.log("---");
+
+                //console.log("Before "+insp.oImgBefore.style.opacity);
+                //console.log("After "+insp.oImgAfter.style.opacity);
+
+
+
+                if (insp.oImgBefore.style.opacity > 0) {
+                    //console.log("fading out");
+                    insp.oImgBefore.style.opacity = (insp.iFadeSteps - insp.iZStepB) / insp.iFadeSteps; 
+                    insp.iZStepB++;        
+                } 
+
+                if (insp.oImgAfter.style.opacity < 1) {
+                    //console.log("fading in");
+                    insp.oImgAfter.style.opacity = insp.iZStepA / insp.iFadeSteps;
+                    insp.iZStepA++;
+                }
+
+
+                insp.iLastWidth = insp.oImgAfter.style.width;
+                insp.iLastHeight = insp.oImgAfter.style.height;
+                insp.iLastTop = insp.oImgAfter.style.top;
+                insp.iLastLeft = insp.oImgAfter.style.left;
+
+                //console.log(insp.iLastWidth);
+
+
+                /*else {
+                    console.log('1');
+                    insp.iZStep = 0;
+
+                    if (insp.bHZoom) {
+                        insp.oImgBefore.style.left = (insp.iMode == 2 ? - insp.iMaxZoom : 0) + 'px';
+                        insp.oImgBefore.style.width = (insp.iMode == 2 ? (insp.iPanWidth + (2 * insp.iMaxZoom)) : insp.iPanWidth) + 'px';
+                    }
+                    if (insp.bVZoom) {
+                        insp.oImgBefore.style.top = (insp.iMode == 2 ? - insp.iMaxZoom : 0) + 'px';
+                        insp.oImgBefore.style.height = (insp.iMode == 2 ? (insp.iPanHeight + (2 * insp.iMaxZoom)) : insp.iPanHeight) + 'px';
+                    }
+
+                    insp.oImgBefore.src = insp.oImgAfter.src;
+                    insp.oImgAfter.src = insp.oImgSource[++insp.iImgStep % insp.oImgSource.length].src;
+                }*/
+            }
+        }
+
+    }, false);
+    </script>
+  </head>
+  <body>
+    <div id="video" style="width: 1px; height: 1px;" ></div>
+    <div id="queuediv" style="display:none"></div>
+    <div id="panel" style="width: 100%;"></div>
+  </body>
+</html>
